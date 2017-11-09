@@ -740,7 +740,7 @@
     // we always call the stopNotificationCallbackId if we have a callback
     // we only call the notificationCallbackId on errors and if there is no stopNotificationCallbackId
 
-    if (stopNotificationCallbackId) {
+    if (!characteristic.isNotifying && stopNotificationCallbackId) {
 
         if (error) {
             NSLog(@"%@", error);
