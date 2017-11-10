@@ -187,12 +187,10 @@
         NSString *key = [self keyForPeripheral: peripheral andCharacteristic:characteristic];
         NSString *callback = [command.callbackId copy];
         [notificationCallbacks setObject: callback forKey: key];
-        [stopNotificationCallbacks removeObjectForKey:key];
+        // [stopNotificationCallbacks removeObjectForKey:key];
 
         [peripheral setNotifyValue:YES forCharacteristic:characteristic];
-
     }
-
 }
 
 // stopNotification: function (device_id, service_uuid, characteristic_uuid, success, failure) {
