@@ -14,19 +14,12 @@
     <issue>https://github.com/don/cordova-plugin-ble-central/issues</issue>
 
     <dependency id="cordova-plugin-compat" version="^1.2.0" />
-    <dependency id="cordova-plugin-cocoapod-support" />
 
     <js-module src="www/ble.js" name="ble">
         <clobbers target="ble" />
     </js-module>
 
     <platform name="ios">
-	<pods-config ios-min-version="8.0" use-frameworks="true">
-	</pods-config>
-
-	<pod name="Zip" />
-	<pod name="iOSDFULibrary" />
-
         <config-file target="config.xml" parent="/widget">
             <feature name="BLE">
                 <param name="ios-package" value="BLECentralPlugin" onload="true"/>
