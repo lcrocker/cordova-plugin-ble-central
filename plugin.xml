@@ -25,7 +25,7 @@
 	</pods-config>
 
 	<pod name="Zip" />
-	<pod name="iOSDFULibrary" />
+	<pod name="iOSDFULibrary" varsion="3.2.1" />
 
         <config-file target="config.xml" parent="/widget">
             <feature name="BLE">
