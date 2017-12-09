@@ -44,7 +44,6 @@
 
         <!-- frameworks -->
         <framework src="CoreBluetooth.framework" />
-	<framework src="iOSDFULibrary" type="podspec" spec="~> 3.0.6"/>
 
 	<hook type="before_plugin_install" src="hooks/ios_pod_extra_settings.js" />
 
@@ -97,12 +96,6 @@
         </js-module>
     </platform>
 
-    <!-- because of <framework type="podspec"> for iOS -->
-    <engines>
-        <engine name="cordova" version=">=6.4.0"/>
-        <engine name="cordova-ios" version=">=4.3.0"/>
-    </engines>
-
     <platform name="wp8">
         <config-file target="config.xml" parent="/*">
             <feature name="BLE">
@@ -117,9 +110,4 @@
          <source-file src="src/wp/BLECentralPlugin.cs" />
     </platform>
 
-    <!-- because of <framework type="podspec"> for iOS -->
-    <engines>
-        <engine name="cordova" version=">=6.4.0"/>
-        <engine name="cordova-ios" version=">=4.3.0"/>
-    </engines>
 </plugin>
